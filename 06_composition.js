@@ -19,7 +19,7 @@ const concat = (array1, array2) => [...array1, ...array2];
  * - ne pas utiliser la méthode push
  */
 
-const push = null;
+const push = (array1, e) => [...array1, e];
 
 /**
  * utiliser l'opérateur de composition ... afin de fusionner 2 objets passés en paramètres
@@ -27,7 +27,7 @@ const push = null;
  * ex: {a: 1, b: 2}, {c: 3, d: 4} => {a: 1, b: 2, c: 3, d: 4}
  */
 
-const merge = null;
+const merge = (obj1, obj2) => [...Object.values(obj1), ...Object.values(obj2)];
 
 /**
  * utiliser l'opérateur de composition ... afin de modifier la propriété name de l'objet
