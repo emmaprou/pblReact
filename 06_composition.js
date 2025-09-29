@@ -27,7 +27,7 @@ const push = (array1, e) => [...array1, e];
  * ex: {a: 1, b: 2}, {c: 3, d: 4} => {a: 1, b: 2, c: 3, d: 4}
  */
 
-const merge = (obj1, obj2) => [...Object.values(obj1), ...Object.values(obj2)];
+const merge = (obj1, obj2) => { return { ...obj1, ...obj2 }};
 
 /**
  * utiliser l'opérateur de composition ... afin de modifier la propriété name de l'objet
@@ -38,7 +38,7 @@ const merge = (obj1, obj2) => [...Object.values(obj1), ...Object.values(obj2)];
  *  - interdiction d'utiliser l'opérateur d'affectation "="
  */
 
-const setName = null;
+const setName = (array, name) =>  { return { ...array, "name" : name }}
 
 // astuce: {...obj} crée une copie de l'objet, c'est un des principes de l'immutabilité et évite les problèmes de référence
 module.exports = {concat, push, merge, setName}
