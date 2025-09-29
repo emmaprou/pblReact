@@ -56,7 +56,7 @@ const sum = (array) => array.reduce((accumulator, currentValue) => accumulator +
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const findUserById = (array, id) => array.find((user) => user.id === id).name;
+const findUserById = (array, id) => array.find((user) => user.id === id)?.name ?? null;
 
 
 module.exports = {multiplyByTwo, filterNameStartByA, sum, findUserById};
