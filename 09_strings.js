@@ -9,4 +9,6 @@
  *  - ne pas utiliser la fonction concat de String
  */
 
-const concat = (nom, prenom) => `${nom} ${prenom}`;  
+const concat = (nom, prenom) => `${nom} ${prenom}`; 
+
+module.exports = {concat};
