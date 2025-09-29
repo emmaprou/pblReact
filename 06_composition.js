@@ -8,7 +8,7 @@
  *  - for, foreach, while, do while sont interdits
  */
 
-const concat = null;
+const concat = (array1, array2) => [...array1, ...array2];
 
 /**
  * utiliser l'opérateur de composition ... afin d'ajouter un élément à un tableau
